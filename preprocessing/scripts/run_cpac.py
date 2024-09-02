@@ -11,14 +11,19 @@ mask_spec = None
 roi_spec = '/home/ubuntu/abide/preprocessing/settings/abide_rois.txt'
 tmp_spec = '/home/ubuntu/abide/preprocessing/settings/centrality_mask.txt'
 p_name = 'abide_rerun'
-creds_path = '/home/ubuntu/dclark-fcp-indi-keys.csv'
-bucket_name = 'fcp-indi'
-bucket_prefix = 'data/Projects/ABIDE_Initiative/RawData'
-bucket_upload_prefix = 'data/Projects/ABIDE_Initiative/Outputs/cpac'
+#creds_path = '/home/ubuntu/dclark-fcp-indi-keys.csv'
+#bucket_name = 'fcp-indi'
+#bucket_prefix = 'data/Projects/ABIDE_Initiative/RawData'
+#bucket_upload_prefix = 'data/Projects/ABIDE_Initiative/Outputs/cpac'
 local_prefix = '/mnt/inputs'
+
+#cpac_pipeline.run(config, subject_list, index, strategies,
+#                  mask_spec, roi_spec, tmp_spec, p_name=p_name,
+#                  creds_path=creds_path, bucket_name=bucket_name,
+#                  bucket_prefix=bucket_prefix, bucket_upload_prefix=bucket_upload_prefix,
+#                  local_prefix=local_prefix)
+
 
 cpac_pipeline.run(config, subject_list, index, strategies,
                   mask_spec, roi_spec, tmp_spec, p_name=p_name,
-                  creds_path=creds_path, bucket_name=bucket_name,
-                  bucket_prefix=bucket_prefix, bucket_upload_prefix=bucket_upload_prefix,
                   local_prefix=local_prefix)

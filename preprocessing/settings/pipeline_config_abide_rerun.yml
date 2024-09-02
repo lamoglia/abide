@@ -1,6 +1,6 @@
 # Select False if you intend to run CPAC on a single machine.
 # If set to True, CPAC will attempt to submit jobs through the job scheduler / resource manager selected below.
-runOnGrid :  True
+runOnGrid :  False
 
 
 # Full path to the FSL version to be used by CPAC.
@@ -25,17 +25,17 @@ queue :  all.q
 
 # Number of cores (on a single machine) or slots on a node (cluster/grid) per subject. Slots are cores on a cluster/grid node.
 # IMPORTANT: 'Number of Cores Per Subject' multiplied by 'Number of Subjects to Run Simultaneously' multiplied by 'Number of Cores for Anatomical Registration (ANTS only)' must not be greater than the total number of cores.
-numCoresPerSubject :  10
+numCoresPerSubject :  4
 
 
 # This number depends on computing resources.
 # IMPORTANT: 'Number of Cores Per Subject' multiplied by 'Number of Subjects to Run Simultaneously' multiplied by 'Number of Cores for Anatomical Registration (ANTS only)' must not be greater than the total number of cores.
-numSubjectsAtOnce :  3
+numSubjectsAtOnce :  1
 
 
 # This number depends on computing resources.
 # IMPORTANT: 'Number of Cores Per Subject' multiplied by 'Number of Subjects to Run Simultaneously' multiplied by 'Number of Cores for Anatomical Registration (ANTS only)' must not be greater than the total number of cores.
-num_ants_threads :  8
+num_ants_threads :  1
 
 
 # Name for this pipeline configuration - useful for identification.
